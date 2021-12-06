@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+    unifyproxy:
+        restart: always
+        image: unifiproxy:latest
+#        network_mode: host
+        ports:
+           - "10001:10001/udp"  # Port used for AP discovery
